@@ -28,7 +28,6 @@ export const aboutPage = {
 
     checkIfOurClientsHeaderIsDisplayed: () => {
         cy.get(ourClientsHeader).scrollIntoView().should("be.visible")
-
     },
 
     checkIfOurClientsIsDisplayed: (brand) => {
