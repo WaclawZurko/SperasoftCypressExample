@@ -17,12 +17,11 @@ describe("About page", () => {
         }),
 
         leadershipTeamTestData.forEach((person) => {
-            it(
-                `Check if ${person.position} is displayed on about page`, () => {
-                    aboutPage.checkIfLeadershipTeamTitleIsDisplayed()
-                    aboutPage.checkIfEmplyeeIsDisplayed(person.name)
+            it(`Check if ${person.position} is displayed on about page`, () => {
+                aboutPage.checkIfLeadershipTeamTitleIsDisplayed()
+                aboutPage.checkIfEmplyeeIsDisplayed(person.name)
 
-                }
+            }
 
             )
         }),
