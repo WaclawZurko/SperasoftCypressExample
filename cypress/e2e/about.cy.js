@@ -9,7 +9,6 @@ describe("About page", () => {
         cy.visit('/about')
         aboutPage.checkAboutUrl()
         aboutPage.checkIfFancyTitleIsDisplayed()
-
     },
 
         it('Check if proper description is displayed on about page', () => {
@@ -21,9 +20,7 @@ describe("About page", () => {
                 aboutPage.checkIfLeadershipTeamTitleIsDisplayed()
                 aboutPage.checkIfEmplyeeIsDisplayed(person.name)
 
-            }
-
-            )
+            })
         }),
 
         brandsTestData.forEach((brand) => {
